@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <title> Carly and Derek's Recipe</title>
+    <meta name="description" content="Simple hummus recipe">
+    <meta charset="utf-8">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-12345678-9', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script type="text/javascript" src="external_javascript_example.js"></script>
+    <link rel="stylesheet" href="css_reset.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <img src="https://lever-client-logos.s3.amazonaws.com/58d4d1db-0eca-41d1-aa71-d8e40214ca16-1532545466470.png" alt="aA_Logo" width = 25%>
+      <nav>
+        <ul>
+          <li> <a href="#description-section"> Description Section</a> </li>
+          <li> <a href="#list-of-ingredients"> List of Ingredients</a> </li>
+          <li> <a href="instructions"> Instructions </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside>
+      <ul>
+        <li> 2 cans of Chickpeas (garbanzo beans)</li>
+        <li> 1/2 cup of Tahini</li>
+        <li> 2 Garlic Cloves</li>
+        <li> 1/4 cup of Olive Oil</li>
+        <li> 1/4 cup of Lemon Juice</li>
+        <li> 1/2 teaspoon of Salt</li>
+      </ul>
+    </aside>
+
+    <h1> Hummus</h1>
+    <h2> <a name="description-section" /> </h2>
+    <p> Popular Mediterranean dip that is a favorite among hip white vegans. Goes well with pita. </p>
+
+    <section>
+      <figure>
+        <img src="https://www.simplyrecipes.com/wp-content/uploads/2017/12/easy-hummus-horiz-a-1800.jpg" alt="hummus-photo" width=25%/>
+      </figure>
+      <figcaption>
+        <a href="https://en.wikipedia.org/wiki/Hummus"> Wiki Hummus</a>
+      </figcaption>
+
+
+      <h2> <a name="list-of-ingredients" /> </h2>
+
+      <h2> <a name="instructions" /> </h2>
+      <ol>
+        <li> Put chickpeas, tahini, garlic, olive oil, lemon juice, and salt into a food processor or blender.</li>
+        <li> Blend until creamy</li>
+        <li> Taste and add salt and olive oil as desired</li>
+      </ol>
+    </section>
+    
+    <section id="reviews">
+      <form id="review-form">
+        <label for="reviewer_name">Reviewer Name: </label>
+        <input id ="reviewer_name" type="text" name="reviewer_name"/>
+        <br/>
+        <legend>Rate my recipe!</legend>
+          <label for="rating1">1</label>
+          <input id="rating1" type="radio" name="rating" checked/>
+          <br/>
+          <label for="rating2">2</label>
+          <input id="rating2" type="radio" name="rating"/>
+          <br/>
+          <label for="rating3">3</label>
+          <input id="rating3" type="radio" name="rating"/>
+          <br/>
+          <label for="rating4">4</label>
+          <input id="rating4" type="radio" name="rating"/>
+          <br/>
+          <label for="rating5">5</label>
+          <input id="rating5" type="radio" name="rating"/>
+          <br/>
+        <label for="expertise">Cooking Expertise:</label>
+        <select id="expertise">
+            <option value="">--Select Cooking Expertise--</option>
+            <option value="sometimes">Sometimes Cook</option>
+            <option value="everyday">Cook Everyday</option>
+            <option value="hobbyist">Cooking is a Hobby</option>
+            <option value="pro">Professional Chef</option>
+        </select>
+        <br/>
+        <label>Review:<br/><textarea name="review"></textarea></label>
+        <input type="submit" value="Submit Review">
+      </form>
+    </section>
+
+    <footer>
+        <p> Recipe courtesy of Simply Recipes </p>
+    </footer>
+
+  </body>
+</html>
