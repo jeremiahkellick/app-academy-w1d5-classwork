@@ -104,6 +104,7 @@ class TicTacToe
     end
 
     if self.board.won?
+      show
       winning_player = self.players[self.board.winner]
       puts "#{winning_player.name} won the game!"
     else
