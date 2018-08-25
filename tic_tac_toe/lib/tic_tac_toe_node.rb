@@ -3,6 +3,7 @@ require_relative 'tic_tac_toe'
 class TicTacToeNode
   
   attr_reader :board, :next_mover_mark, :prev_move_pos
+  attr_accessor :score
   
   def initialize(board, next_mover_mark, prev_move_pos = nil)
     @board = board
@@ -48,4 +49,13 @@ class TicTacToeNode
     arr
     
   end
+require 'byebug'
+  def score(player_mark)
+    #debugger
+    return -1 if losing_node?(player_mark)
+    return 1 if winning_node?(player_mark)
+    return 0 if @board.over?
+    children.reduce(0) { |score, child| score + child.score(player_mark) }
+  end
+  
 end

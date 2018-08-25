@@ -129,6 +129,7 @@ class TicTacToe
 
   def play_turn
     loop do
+      #debugger
       current_player = self.players[self.turn]
       pos = current_player.move(self, self.turn)
 
