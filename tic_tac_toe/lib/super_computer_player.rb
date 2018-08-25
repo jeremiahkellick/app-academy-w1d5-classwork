@@ -5,10 +5,8 @@ class SuperComputerPlayer < ComputerPlayer
     game.board
     current = TicTacToeNode.new(game.board.dup, mark)
     return current.children.max_by do |child|
-      score = child.score(mark)
-      puts "pos: #{child.prev_move_pos} score: #{score}"
-      score
-    end
+      child.score(mark)
+    end.prev_move_pos
   end
 end
 
@@ -17,5 +15,5 @@ if __FILE__ == $PROGRAM_NAME
   hp = HumanPlayer.new("Jeff")
   cp = SuperComputerPlayer.new
 
-  TicTacToe.new(cp, hp).run
+  TicTacToe.new(hp, cp).run
 end
